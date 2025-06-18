@@ -20,6 +20,7 @@ const iframes = [];
 
 for (let i = 0; i < 6; i++) {
   const iframe = document.createElement("iframe");
+  iframe.classList.add("loop", "hidden-iframe");
   //iframe.style.display = "none";
   document.body.appendChild(iframe);
   iframes.push(iframe);
