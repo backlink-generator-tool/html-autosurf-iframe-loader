@@ -1,4 +1,4 @@
-# SEO Iframe HTML Rotator
+# Iframe HTML Rotator
 
 A lightweight JavaScript-based iframe rotator that cycles through a shuffled list of HTML pages every 15 seconds. Perfect for:
 
