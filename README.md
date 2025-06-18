@@ -1,19 +1,16 @@
-# Iframe HTML Rotator
+# HTML Autosurf Iframe Loader
 
-A lightweight JavaScript-based iframe rotator that cycles through a shuffled list of HTML pages every 15 seconds. Perfect for:
+Auto-load and cycle through local HTML files using JavaScript iframes — ideal for autosurf traffic tools, web stress tests, and automation setups.
 
-- SEO backlink indexing
-- Autosurf simulations
-- Automated traffic bots
-- HTML landing page rotations
+## 🔍 Features
 
-## 🚀 Features
+- Loads **15 iframes simultaneously**
+- Each iframe loads a **random local HTML file**
+- Automatically reloads each iframe every **15 seconds**
+- Uses **Fisher-Yates shuffle** to randomize file order
+- Lightweight, no dependencies, and runs entirely client-side
 
-- 100% client-side JavaScript (no dependencies)
-- Rotates one page at a time every 15 seconds
-- Limited to 15 iframes maximum
-- Optimized for indexing tools and Googlebot behavior
-- Clean HTML/JS file structure, ready for deployment on GitHub Pages or any web host
+---
 
 ## 📁 File Structure
 
@@ -27,23 +24,28 @@ seo-iframe-html-rotator/
 │ └── ... up to page20.html
 
 
-## 🔧 How It Works
+---
 
-1. A hardcoded array of 20 HTML file links is shuffled.
-2. A new iframe is added to the page every 15 seconds.
-3. A maximum of 15 iframes are created and loaded.
-4. Each iframe displays one of the shuffled HTML pages.
+## 🚀 How to Use
 
-## 🌐 Usage
+1. Clone or download this repository.
+2. Add your own HTML content into the `/pages/` directory.
+3. Open `index.html` in a browser to start the iframe autosurf loop.
 
-1. Clone this repository or download the ZIP.
-2. Customize the `pages/pageX.html` files with your own content.
-3. Open `index.html` in a browser or deploy it via GitHub Pages.
+> ✅ Tip: All 15 iframes load at once and continue reloading new random pages every 15 seconds.
 
-## 💡 SEO Tip
+---
 
-Use meaningful content and proper `<title>` and `<meta>` tags inside each `pageX.html` to maximize the SEO benefit.
+## 🧠 Use Cases
+
+- Autosurf traffic bots
+- Web automation testing
+- HTML preview rotator
+- Network load simulations
+- Background content rotation
+
+---
 
 ## 📄 License
 
-MIT License
+MIT — free to use, modify, and share.
