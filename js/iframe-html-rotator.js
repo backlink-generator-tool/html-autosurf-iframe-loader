@@ -62,7 +62,7 @@ const htmlFiles = shuffleArray([
 const iframes = [];
 
 // Create 15 hidden iframes on the page
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 6; i++) {
   const iframe = document.createElement("iframe");
   iframe.classList.add("loop", "hidden-iframe");
   //iframe.style.display = "none";
