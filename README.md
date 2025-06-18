@@ -14,14 +14,15 @@ Auto-load and cycle through local HTML files using JavaScript iframes — ideal 
 
 ## 📁 File Structure
 
-seo-iframe-html-rotator/
-├── index.html # Main launcher file
-├── js/
-│ └── rotator.js # JavaScript logic to shuffle and load pages
-├── pages/
-│ ├── page1.html
-│ ├── page2.html
-│ └── ... up to page20.html
+html-autosurf-iframe-loader/
+├── index.html               # Main HTML file with script loader
+├── autosurf.js              # Main JavaScript logic
+├── pages/                   # Folder with your HTML pages
+│   ├── page1.html
+│   ├── page2.html
+│   └── ... up to page20.html
+├── README.md                # Project documentation
+
 
 
 ---
