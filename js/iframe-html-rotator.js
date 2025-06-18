@@ -1,4 +1,3 @@
-// Utility: Fisher-Yates shuffle
 function shuffleArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -7,9 +6,12 @@ function shuffleArray(arr) {
   return arr;
 }
 
-// Array of local HTML files to load (edit this list as needed)
-const htmlFiles = shuffleArray([
-    "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page1.html",
+//const htmlFiles = shuffleArray(Array.from({ length: 20 }, (_, i) => `pages/page${i + 1}.html`));
+
+
+// Hardcoded array of HTML links
+  const htmlFiles = [
+        "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page1.html",
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page2.html",
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page3.html",
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page4.html",
@@ -57,23 +59,20 @@ const htmlFiles = shuffleArray([
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page46.html",
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page47.html",
     "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page48.html"
-]);
+  ];
 
 const iframes = [];
 
-// Create 15 hidden iframes on the page
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 15; i++) {
   const iframe = document.createElement("iframe");
-  iframe.classList.add("loop", "hidden-iframe");
   //iframe.style.display = "none";
   document.body.appendChild(iframe);
   iframes.push(iframe);
 }
 
-// Randomly load a new HTML file into iframe every 15 seconds
 function startIframeLoop() {
   if (!htmlFiles.length) {
-    console.error("🚫 No HTML files to load.");
+    console.error("🚫 No HTML files found.");
     return;
   }
 
@@ -84,12 +83,11 @@ function startIframeLoop() {
     }
 
     iframe.onload = () => {
-      setTimeout(loadNext, 15000); // wait 15 seconds
+      setTimeout(loadNext, 15000);
     };
 
-    loadNext(); // initial load
+    loadNext();
   }
 }
 
-// Start the loop
 startIframeLoop();
