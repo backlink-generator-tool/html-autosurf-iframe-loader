@@ -29,24 +29,6 @@ This project is great for:
 
 ---
 
-## 📁 File Structure
-
-html-iframe-page-rotator-autosurf-tool/
-├── index.html # Main launcher file
-├── js/
-│ └── rotator.js # JavaScript logic to shuffle and load pages
-└── pages/
-├── page1.html
-├── page2.html
-├── ...
-└── page20.html
-
-yaml
-Copy
-Edit
-
----
-
 ## 📄 How It Works
 
 When you open `index.html`, it initializes 15 hidden `<iframe>` elements. Each iframe is assigned a random HTML file from the `/pages/` folder and is reloaded every 15 seconds with another randomized page.
@@ -62,10 +44,3 @@ This loop continues endlessly, giving the effect of automated browsing behavior.
 - ✅ HTML5
 - ✅ Runs in any modern browser
 
----
-
-## 🔧 Setup Instructions
-
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/html-iframe-page-rotator-autosurf-tool.git
