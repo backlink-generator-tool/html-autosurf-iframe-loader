@@ -8,7 +8,7 @@ This open-source utility uses randomized loading logic to simulate real-time pag
 
 ## 🚀 What It Does
 
-- 🔁 Automatically loads **6 iframes** with different local HTML pages
+- 🔁 Automatically loads **5 iframes** with different local HTML pages
 - 🎲 Randomizes file selection using **Fisher-Yates shuffle**
 - ⏱ Reloads each iframe every **15 seconds** with a new random page
 - 📄 Supports **up to 20 HTML files** in `/pages/`
@@ -31,7 +31,7 @@ This project is great for:
 
 ## 📄 How It Works
 
-When you open `index.html`, it initializes 6 hidden `<iframe>` elements. Each iframe is assigned a random HTML file from the `/pages/` folder and is reloaded every 15 seconds with another randomized page.
+When you open `index.html`, it initializes 5 hidden `<iframe>` elements. Each iframe is assigned a random HTML file from the `/pages/` folder and is reloaded every 15 seconds with another randomized page.
 
 This loop continues endlessly, giving the effect of automated browsing behavior.
 
