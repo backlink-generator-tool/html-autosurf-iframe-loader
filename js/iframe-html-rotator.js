@@ -8,9 +8,29 @@ function shuffleArray(arr) {
 
 // Hardcoded array of HTML links
 const htmlFiles = shuffleArray([
-  "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page1.html",
-  "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page2.html",
-  "https://backlink-generator-tool.github.io/html-autosurf-iframe-loader/pages/page3.html"
+  "https://quickseobuilder.blogspot.com/",
+  "https://webalivecheck.blogspot.com/",
+  "https://upchecktool.blogspot.com/",
+  "https://upordownnow.blogspot.com/",
+  "https://statusfetch.blogspot.com/",
+  "https://isitupcheck.blogspot.com/",
+  "https://pingstatusnow.blogspot.com/",
+  "https://sitepingmonitor.blogspot.com/",
+  "https://upstatuscheck.blogspot.com/",
+  "https://sitepingtool.blogspot.com/",
+  "https://checkifonline.blogspot.com/",
+  "https://upordownrealtime.blogspot.com/",
+  "https://upordownwebsitecheck.blogspot.com/",
+  "https://isitreachable.blogspot.com/",
+  "https://uptimecheckr.blogspot.com/",
+  "https://isitupnow.blogspot.com/",
+  "https://webstatuschecker.blogspot.com/",
+  "https://pingpeekchecker.blogspot.com/",
+  "https://boost-fans-now.blogspot.com/",
+  "https://archivewebpagesinstantly.blogspot.com/",
+  "https://archiveanyurlinstantly.blogspot.com/",
+  "https://updowncheck.blogspot.com/",
+  "https://isiteup.blogspot.com/"
 ]);
 
 // Create invisible iframes that still load
