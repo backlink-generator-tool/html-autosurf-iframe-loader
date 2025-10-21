@@ -33,20 +33,22 @@ const htmlFiles = shuffleArray([
   "https://isiteup.blogspot.com/"
 ]);
 
+document.addEventListener('DOMContentLoaded', function() {
 // Create invisible iframes that still load
 const iframes = [];
-for (let i = 0; i < 3; i++) {
-  const iframe = document.createElement("iframe");
-  iframe.classList.add("full-iframe", "loop", "hidden-iframe");
-  // Avoid display:none; use CSS to make invisible but loadable
-  iframe.style.width = "0";
-  iframe.style.height = "0";
-  iframe.style.opacity = "0";
-  iframe.style.position = "absolute";
-  iframe.style.border = "0";
-  document.body.appendChild(iframe);
-  iframes.push(iframe);
-}
+  for (let i = 0; i < 3; i++) {
+    const iframe = document.createElement("iframe");
+    iframe.classList.add("full-iframe", "loop", "hidden-iframe");
+    // Avoid display:none; use CSS to make invisible but loadable
+    iframe.style.width = "0";
+    iframe.style.height = "0";
+    iframe.style.opacity = "0";
+    iframe.style.position = "absolute";
+    iframe.style.border = "0";
+    document.body.appendChild(iframe);
+    iframes.push(iframe);
+  }
+});
 
 /**
  * Safely appends a cache-busting timestamp parameter.
